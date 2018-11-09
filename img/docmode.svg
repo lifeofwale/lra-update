@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_more_vert" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#45526b}
+        </style>
+    </defs>
+    <g id="Icon_24px" data-name="Icon 24px">
+        <path id="Shape" d="M0 0h20v20H0z" class="cls-1"/>
+        <path id="Shape-2" d="M1.667 13.333a1.667 1.667 0 1 1 1.667-1.667 1.669 1.669 0 0 1-1.667 1.667zm0-5a1.666 1.666 0 1 1 1.667-1.667 1.669 1.669 0 0 1-1.667 1.667zm0-5a1.667 1.667 0 1 1 1.667-1.666 1.669 1.669 0 0 1-1.667 1.667z" class="cls-2" data-name="Shape" transform="translate(8.333 3.333)"/>
+    </g>
+</svg>
