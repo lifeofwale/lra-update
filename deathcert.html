@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Merd|Cert</title>
+  </head>
+  <body class="h-100">
+   <!-- Begin -->
+
+     <div class="container-fluid" id="wrapper"> 
+         
+      <div class="row dashboard">
+          <aside class="menu-sidebar col-xs-12 col-sm-3 col-lg-2 px-0 position-fixed shadow" style="height:100vh;">
+            <div class="logo d-flex flex-row align-items-center">
+                <a href="#">LRA</a>
+            </div>
+
+            <ul class="nav sidemenu">
+                <li class="nav-item w-100">
+                  <a href="#" class="nav-link sidemenu-title">Navigation</a>
+                </li>
+
+                <li class="nav-item w-100 active">
+                    <a href="#" class="nav-link sidemenulink">
+                       <span><img src="img/dashboard.svg"  class="iconst" alt="dashboardicon"></span>
+                      <span class="menutitle">Dashboard</span>
+                      <i class="fas fa-angle-right float-right"></i>
+                    </a>
+                </li>
+
+                <!--  -->
+                <li class="nav-item w-100">
+                   
+                  <a  class="nav-link sidemenulink" href="#req-basic" data-toggle="collapse" aria-expanded="false" aria-controls="req-basic">
+                    <span><img src="img/request.svg" class="iconst"  alt="dashboardicon"></span>
+                      <span class="menutitle">Request
+                      </span>
+                      <span class="menutitle badge badge-req">10+</span> 
+                      <i class="fas fa-angle-right float-right js-rotate-if-collapsed"></i>
+                    </a>
+                    <div class="collapse" id="req-basic">
+                        <ul class="nav flex-column submenu">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                All Request</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                Initiate Request</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                Register New Patient</a>
+                          </li>
+                        </ul>
+                      </div>
+                </li>
+
+                <!--  -->
+
+                <li class="nav-item w-100">
+                   
+                    <a  class="nav-link sidemenulink" href="#pay-basic" data-toggle="collapse" aria-expanded="false" aria-controls="pay-basic">
+                      <span><img src="img/payment.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">Payment
+                        </span>
+                        <span class="menutitle badge badge-pay">new</span> 
+                        <i class="fas fa-angle-right float-right js-rotate-if-collapsed"></i>
+                      </a>
+                      <div class="collapse" id="pay-basic">
+                          <ul class="nav flex-column submenu">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <i class="fas fa-angle-right icon"></i>
+                                Patient</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <i class="fas fa-angle-right icon"></i>
+                                New Request</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </li>
+                  <!--  -->
+                  <li class="nav-item w-100">
+                      <a href="#" class="nav-link sidemenulink">
+                        <span><img src="img/usermanage.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">User Management</span>
+                      
+                      </a>
+                  </li>
+                  <!--  -->
+                  <li class="nav-item w-100">
+                      <a href="#" class="nav-link sidemenulink">
+                        <span><img src="img/sign.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">E-Signatures</span>
+                      </a>
+                  </li>
+                  <!--  -->
+                  <li class="nav-item w-100">
+                      <a href="#" class="nav-link sidemenulink">
+                        <span><img src="img/set.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">Settings</span>
+                      </a>
+                  </li>
+            </ul>
+          </aside>
+
+          <!-- end of side bar -->
+
+          <main class="main col-lg-10 col-sm-9 col-md-9 col-xs-12 offset-lg-2 offset-md-3 px-0">
+            <header class="main-head sticky-top">
+                  <div class="container">
+                    <nav class="d-flex justify-content-between align-content-stretch pageclr">
+                       <ul class="nav d-flex align-content-stretch nav-pan">
+                            <!-- <div class="navbar-toggle d-inline">
+                                    <button type="button" class="navbar-toggler pageclr" id="spin">
+                                        <span class="navbar-toggle-bar bar1"></span>
+                                        <span class="navbar-toggle-bar bar2"></span>
+                                        <span class="navbar-toggle-bar bar3"></span>
+                                      </button>
+                                </div> -->
+                                <li class="nav-item d-flex under">
+                                    <a href="" class="nav-link align-self-center pl-0 pb-0"> <span><img src="img/requestpack.svg" width="24px" height="24px" style="margin-right:1.35rem"  alt="requestpage_icon"></span>DEATH CERTIFICATE</a>
+                                  </li>
+                       </ul>
+                       <ul class="nav d-flex align-content-stretch nav-pan">
+                          <div class="navbar-toggle d-inline">
+                            <button type="button" class="navbar-toggler pageclr" id="spin">
+                                <span class="navbar-toggle-bar bar1"></span>
+                                <span class="navbar-toggle-bar bar2"></span>
+                                <span class="navbar-toggle-bar bar3"></span>
+                              </button>
+                        </div>
+
+                        <li class="nav-item d-flex align-content-stretch mx-2">
+                          <a href="" class="align-self-center mic"  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bullhorn"></i><span><div class="rednote"></div></span></a>
+                          <ul class="dropdown-menu dropdown-menu-right px-2 shadow mt-2 notify">
+                            <li>
+                              <div class="d-flex flex-row justify-content-between" style="height:18px;">
+                                <p>APP NOTIFICATION</p>
+                                <a href="" class="badge badge-note">VIEW ALL</a>
+                              </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">You have <b>3 new themes</b> trending</div>
+                                  <div class="top-text-light">15 minutes ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b></div>
+                                  <div class="top-text-light">2 hours ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">New asset recommendations in <b>5 themes</b></div>
+                                  <div class="top-text-light">4 hours ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">Assets specifications modified in themes</div>
+                                  <div class="top-text-light">4 hours ago</div>
+                                </a> 
+                              </li>
+                             
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-flex drop-down">
+                          <a href="#" id="logout-basic" class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Adewale Jr</a>
+                          <ul class="dropdown-menu border-0 shadow" aria-labelledby="logout-basic">
+                              <li class="dropdown-item"> <a href="#" class="nav-link"><i class="fas fa-headset pr-2 text-success"></i>Admin support</a></li>
+                              <li class="dropdown-divider"></li>
+                              <li class="dropdown-item"><a href="#" class="nav-link"><i class="fas fa-sign-out-alt pr-2 text-danger"></i>Logout</a></li>
+                          </ul>
+                        </li>
+                         </ul>
+                       
+                      
+                    </nav>
+                  </div>
+            </header>
+
+                  <!-- 1 -->
+                  <div class="container certform mb-4">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="clearfix certhead">
+                                <div class="float-left">
+                                    <img src="img/lasuthlogo.png" alt="">
+                                </div>
+                                <div class="float-right">
+                                    <p class="text-right cour">7th May, 2018</p>
+                                    <p class="text-right cour">SUB/LASUTH/302/034</p>
+                                </div>
+                            </div>
+                            <div class="container certbody">
+                                <h5 class="text-center">RE : ATANDA OLUWASEUN JOSEPH</h5>
+                                <h5 class="text-center">DEATH CERTIFICATE</h5>
+                                <p class="text-left intro">Enter Notification of Death details</p>
+                             
+                                <form action="" id="medical">
+                                    <div class="row details">
+                                       
+                                            <div class="form-group col-sm-6">
+                                                <label for="gender">1. First Name</label>
+                                                <input type="text" class="form-control" id="gender" placeholder="|write something here">
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                    <label for="gender2">2. Last Name</label>
+                                                    <input type="text" class="form-control" id="gender2">
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                        <label for="gender3">3. Residential Address</label>
+                                                        <input type="text" class="form-control" id="gender3">
+                                                    </div>
+
+                                                    <div class="form-group col-sm-6">
+                                                            <label for="gender4">4. Age</label>
+                                                            <input type="text" class="form-control" id="gender4">
+                                                        </div> 
+                                                        <div class="form-group col-sm-6">
+                                                                <label for="gender5">5. Last seen When</label>
+                                                                <input type="time" class="form-control" id="gender5">
+                                                            </div>  
+                                                          
+                                               
+                                        <!-- form split -->
+                                      
+                                                <div class="form-group col-sm-6">
+                                                        <label for="gender6">6. Suffered From</label>
+                                                        <input type="text" class="form-control" id="gender6">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                            <label for="gender7">7. Gender</label>
+                                                            <input type="text" class="form-control" id="gender7">
+                                                        </div>
+                                                        <div class="form-group col-sm-6">
+                                                                <label for="gender8">8. Death Date</label>
+                                                                <input type="time" class="form-control" id="gender8">
+                                                            </div>
+                                                            <div class="form-group col-sm-6">
+                                                                    <label for="gender9">9. Primary Cause</label>
+                                                                    <input type="text" class="form-control" id="gender9">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                        <label for="gender10">10. Death Time</label>
+                                                                        <input type="time" class="form-control" id="gender10">
+                                                                    </div>
+                                                                    <div class="form-group col-sm-6">
+                                                                        <label for="gender11">11.  Disease Time</label>
+                                                                        <input type="time" class="form-control" id="gender11">
+                                                                    </div>
+                                                                    <div class="form-group col-sm-6">
+                                                                        <label for="gender12">12. Secondary Cause</label>
+                                                                        <input type="text" class="form-control" id="gender12">
+                                                                    </div>
+                                                                    <div class="form-group col-sm-6">
+                                                                        <label for="gender13">13. Witness Date</label>
+                                                                        <input type="time" class="form-control" id="gender13">
+                                                                    </div>
+                                                                   
+
+                                           
+                                    </div>
+                                </form>
+
+                                    <!-- form-end -->
+                                 
+                                    <!-- signatures -->
+                                    <div class="row stamp">
+                                        <div class="col-sm-7">
+                                           
+                                            
+                                                  
+                                                    <div class="form-group posrel">
+                                                    <label for="inputdocname" class="docssign">Registrar Name and Signature</label>
+                                                      <input type="text" class="form-control readdocname" id="inputdocname" value="Dr Francis Oyelemopo">
+                                                    </div>
+                                                    <button type="button" class="btn btn-link btn-rel" data-toggle="modal" data-target="#exampleModal" id="addsigna">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                          </button>
+                                                 
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content contentmodal">
+            <div class="modal-header backcolor">
+              <h5 class="modal-title w-100 text-white" id="exampleModalLabel">Please select doctor's signature</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body body-modal">
+            <!-- modal-body -->
+                <div class="container">
+                        <form>
+
+                            <div class="form-row">
+                                <div class="col-sm-6">
+                                        <div class="form-group wrap">
+                                                <div class="form-check ml-2">
+                                                  <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                  <label class="form-check-label pl-1" for="Check2">
+                                                          Dr Francis Oyelemopo
+                                                    <br>
+                                                    <p> Department of family health</p>
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <!-- 2 -->
+                                              <div class="form-group wrap">
+                                                    <div class="form-check ml-2">
+                                                      <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                      <label class="form-check-label pl-1" for="Check2">
+                                                              Dr Francis Oyelemopo
+                                                        <br>
+                                                        <p> Department of family health</p>
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                  <!-- 3 -->
+                                                  <div class="form-group wrap">
+                                                        <div class="form-check ml-2">
+                                                          <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                          <label class="form-check-label pl-1" for="Check2">
+                                                                  Dr Francis Oyelemopo
+                                                            <br>
+                                                            <p> Department of family health</p>
+                                                          </label>
+                                                        </div>
+                                                      </div>
+                                                      <!--  4-->
+                                                      <div class="form-group wrap">
+                                                            <div class="form-check ml-2">
+                                                              <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                              <label class="form-check-label pl-1" for="Check2">
+                                                                      Dr Francis Oyelemopo
+                                                                <br>
+                                                                <p> Department of family health</p>
+                                                              </label>
+                                                            </div>
+                                                          </div>
+                                                          <!-- 5 -->
+                                                          <div class="form-group wrap">
+                                                                <div class="form-check ml-2">
+                                                                  <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                                  <label class="form-check-label pl-1" for="Check2">
+                                                                          Dr Francis Oyelemopo
+                                                                    <br>
+                                                                    <p> Department of family health</p>
+                                                                  </label>
+                                                                </div>
+                                                              </div>
+                                                              <!-- 6 -->
+                                                              <div class="form-group wrap">
+                                                                    <div class="form-check ml-2">
+                                                                      <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                                      <label class="form-check-label pl-1" for="Check2">
+                                                                              Dr Francis Oyelemopo
+                                                                        <br>
+                                                                        <p> Department of family health</p>
+                                                                      </label>
+                                                                    </div>
+                                                                  </div>
+                                </div>
+                                <!-- xx -->
+                                <div class="col-sm-6">
+                                        <div class="form-group wrap">
+                                                <div class="form-check ml-2">
+                                                  <input class="form-check-input doch" type="checkbox" value=" Dr Francis Oyelemopo" id="Check2" required>
+                                                  <label class="form-check-label pl-1" for="Check2">
+                                                          Dr Francis Oyelemopo
+                                                    <br>
+                                                    <p> Department of family health</p>
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <!-- 2 -->
+                                              <div class="form-group wrap">
+                                                    <div class="form-check ml-2">
+                                                      <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                      <label class="form-check-label pl-1" for="Check2">
+                                                              Dr Francis Oyelemopo
+                                                        <br>
+                                                        <p> Department of family health</p>
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                  <!-- 3 -->
+                                                  <div class="form-group wrap">
+                                                        <div class="form-check ml-2">
+                                                          <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                          <label class="form-check-label pl-1" for="Check2">
+                                                                  Dr Francis Oyelemopo
+                                                            <br>
+                                                            <p> Department of family health</p>
+                                                          </label>
+                                                        </div>
+                                                      </div>
+                                                      <!-- 4 -->
+                                                      <div class="form-group wrap">
+                                                            <div class="form-check ml-2">
+                                                              <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                              <label class="form-check-label pl-1" for="Check2">
+                                                                      Dr Francis Oyelemopo
+                                                                <br>
+                                                                <p> Department of family health</p>
+                                                              </label>
+                                                            </div>
+                                                          </div>
+                                                          <!-- 5 -->
+                                                          <div class="form-group wrap">
+                                                                <div class="form-check ml-2">
+                                                                  <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                                  <label class="form-check-label pl-1" for="Check2">
+                                                                          Dr Francis Oyelemopo
+                                                                    <br>
+                                                                    <p> Department of family health</p>
+                                                                  </label>
+                                                                </div>
+                                                              </div>
+                                                              <!-- 6 -->
+                                                                <div class="form-group wrap">
+                                                        <div class="form-check ml-2">
+                                                          <input class="form-check-input doch" type="checkbox" value="" id="Check2" required>
+                                                          <label class="form-check-label pl-1" for="Check2">
+                                                                  Dr Francis Oyelemopo
+                                                            <br>
+                                                            <p> Department of family health</p>
+                                                          </label>
+                                                        </div>
+                                                      </div>
+                                    </div>
+                            </div>
+                                
+                               
+                              </form>
+                </div>
+            </div>
+            <div class="modal-footer footer-modal">
+              <button type="button" class="btn btn-close" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-savve">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <button class="btn btn-preview float-right"> PREVIEW</button>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                  
+          </main>
+      </div>
+     </div>
+
+
+
+<!--  -->
+
+
+<!--  -->
+
+
+
+    <!-- Boostrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+ 
+  </body>
+</html>
