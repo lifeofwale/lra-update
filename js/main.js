@@ -1,5 +1,22 @@
 
 $(document).ready(function(){
+        $("#show_hide_password a").on('click', function(event) {
+                event.preventDefault();
+                if($('#show_hide_password input').attr("type") == "text"){
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password i').addClass( "fa-eye-slash" );
+                    $('#show_hide_password i').removeClass( "fa-eye" );
+                }else if($('#show_hide_password input').attr("type") == "password"){
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password i').removeClass( "fa-eye-slash" );
+                    $('#show_hide_password i').addClass( "fa-eye" );
+                }
+            });
+        
+            $('.toggle-sidebar').click(function (e) {
+                $('.main-sidebar').toggleClass('open');
+              });
+              
 	$('#spin').click(function(){
         $('span.bar1,span.bar2,span.bar3').toggleClass('change');
         $('aside.menu-sidebar').toggleClass('toggleinout');

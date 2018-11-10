@@ -30,6 +30,102 @@ body {
   font-family: 'Rubik', sans-serif;
   background-color: #FAFBFE; }
 
+.carousel {
+  height: 100vh; }
+
+.caratop {
+  height: 100vh; }
+  .caratop .carousel-indicators > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%; }
+  .caratop .carousel-indicators > li.active {
+    background-color: #1fb986; }
+  .caratop img {
+    height: 100vh; }
+  .caratop .carousel-inner {
+    position: relative; }
+    .caratop .carousel-inner .carousel-caption {
+      position: absolute;
+      right: 15%;
+      bottom: 15%;
+      left: 15%;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: center; }
+    .caratop .carousel-inner .formtop {
+      width: 366px;
+      height: 530px !important;
+      -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      border: solid 1px #cccccc;
+      background-color: white;
+      height: 100vh; }
+      .caratop .carousel-inner .formtop a {
+        color: #1fb986; }
+      .caratop .carousel-inner .formtop img.logo {
+        margin-top: 60px;
+        width: 240px;
+        height: 60px; }
+      .caratop .carousel-inner .formtop label {
+        color: #333; }
+      .caratop .carousel-inner .formtop .form-group {
+        position: relative; }
+      .caratop .carousel-inner .formtop .fa {
+        position: absolute;
+        right: 20px;
+        top: 18px; }
+      .caratop .carousel-inner .formtop input {
+        height: 45px;
+        border-radius: 3px;
+        border: solid 1px #cccccc;
+        background-color: #fdfdfd; }
+      .caratop .carousel-inner .formtop ::-webkit-input-placeholder {
+        color: #d8d8d8;
+        opacity: 0.5;
+        font-size: 14px; }
+      .caratop .carousel-inner .formtop :-ms-input-placeholder {
+        color: #d8d8d8;
+        opacity: 0.5;
+        font-size: 14px; }
+      .caratop .carousel-inner .formtop ::-ms-input-placeholder {
+        color: #d8d8d8;
+        opacity: 0.5;
+        font-size: 14px; }
+      .caratop .carousel-inner .formtop ::placeholder {
+        color: #d8d8d8;
+        opacity: 0.5;
+        font-size: 14px; }
+      .caratop .carousel-inner .formtop .btn {
+        width: 140px;
+        height: 49px;
+        border-radius: 4px;
+        color: white;
+        font-size: 13px;
+        background-color: #1fb986; }
+        .caratop .carousel-inner .formtop .btn:hover {
+          background-color: #1ba376; }
+      .caratop .carousel-inner .formtop .btn.btn-block {
+        width: 100%;
+        height: 49px;
+        border-radius: 4px;
+        color: white;
+        font-size: 13px;
+        background-color: #1fb986; }
+        .caratop .carousel-inner .formtop .btn.btn-block:hover {
+          background-color: #1ba376; }
+      .caratop .carousel-inner .formtop h5 {
+        padding-top: 30px;
+        padding-bottom: 30px; }
+      .caratop .carousel-inner .formtop p {
+        font-size: 12px;
+        color: #45d88e;
+        text-align: right; }
+      .caratop .carousel-inner .formtop h6 {
+        padding-bottom: 48px; }
+
 .dashboard .menu-sidebar {
   background-color: #263544;
   -webkit-transition: all 0.5s;
@@ -314,7 +410,8 @@ body {
   .reqbody .tabletype thead {
     border: 0px;
     background-color: #f3f3f3;
-    border-bottom: 3px solid #1fb986; }
+    border-bottom: 3px solid #1fb986;
+    font-size: 10px; }
   .reqbody .tabletype .paidclr {
     border-radius: 50%;
     width: 8px;
@@ -819,6 +916,12 @@ body {
     border-radius: 3px;
     background-color: #fdfdfd;
     border: solid 1px #cccccc; }
+  .certform select {
+    height: 48px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fdfdfd;
+    border: solid 1px #cccccc; }
   .certform a.nav-link {
     font-size: 13px;
     color: #45526b;
@@ -869,7 +972,12 @@ body {
     padding-left: 10%;
     padding-right: 10%; }
     .certform .certbody input {
-      height: 54px;
+      height: 48px;
+      border-radius: 3px;
+      border: solid 1px #cccccc;
+      background-color: #fdfdfd; }
+    .certform .certbody select {
+      height: 48px;
       border-radius: 3px;
       border: solid 1px #cccccc;
       background-color: #fdfdfd; }

@@ -111,6 +111,130 @@ body{
     font-family: 'Rubik', sans-serif;
     background-color: #FAFBFE;
 }
+.carousel {
+    height: 100vh;
+}
+.caratop{
+
+    height: 100vh;
+ 
+     
+    .carousel-indicators>li{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .carousel-indicators>li.active{
+        background-color:$customtextcolor;
+       
+    }
+    img{
+        height: 100vh;
+    }
+    
+   .carousel-inner{
+    position: relative;
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 15%;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+   .formtop{
+    width: 366px;
+    height: 530px !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #cccccc;
+    
+    background-color: white;
+    height: 100vh;
+a{
+    color:$customtextcolor;
+}
+    img.logo{
+       margin-top: 60px;
+        width:240px;
+        height:60px ;
+    }
+    label{
+        color:#333;
+    }
+    
+    .form-group{
+        position: relative;
+    }
+    .fa{
+        position: absolute;
+        right:20px;
+        top:18px;
+    }
+ 
+      input{
+        
+          height: 45px;
+          border-radius: 3px;
+          border: solid 1px #cccccc;
+          background-color: #fdfdfd;
+    }
+    ::placeholder { 
+        color:$placecolor;
+        opacity: 0.5;
+        font-size: 14px; 
+    }
+      .btn{
+        width: 140px;
+        height: 49px;
+        border-radius: 4px;
+        color:white;
+        font-size: 13px;
+        background-color: $customtextcolor;
+
+        &:hover{
+            background-color: darken($customtextcolor,5%);
+        }
+        
+    }
+    .btn.btn-block{
+        width: 100%;
+        height: 49px;
+        border-radius: 4px;
+        color:white;
+        font-size: 13px;
+        background-color: $customtextcolor;
+
+        &:hover{
+            background-color: darken($customtextcolor,5%);
+        }
+        
+    }
+    h5{
+        padding-top:30px;
+        padding-bottom:30px;
+      }
+      
+      p{
+            font-size: 12px;
+            color: #45d88e;
+            text-align: right;
+      }
+
+      h6{
+          padding-bottom: 48px;
+      }
+     
+
+}
+ }
+
+}
+
+
 
 
 .dashboard{
@@ -433,6 +557,7 @@ body{
                 border:0px;
                 background-color: #f3f3f3;
                 border-bottom: 3px solid $customtextcolor;
+                font-size: 10px;
             }
 
             .paidclr{
@@ -1164,6 +1289,13 @@ body{
         background-color: #fdfdfd;
         border: solid 1px #cccccc;
     }
+    select{
+        height: 48px;
+        font-size: 13px;
+        border-radius: 3px;
+        background-color: #fdfdfd;
+        border: solid 1px #cccccc;
+    }
     a.nav-link{
         font-size: 13px;
         color:$textcolor;
@@ -1216,7 +1348,13 @@ body{
         padding-left:10%;
         padding-right: 10%;
         input{
-            height: 54px;
+            height: 48px;
+  border-radius: 3px;
+  border: solid 1px #cccccc;
+  background-color: #fdfdfd;
+        }
+        select{
+            height: 48px;
   border-radius: 3px;
   border: solid 1px #cccccc;
   background-color: #fdfdfd;
