@@ -523,9 +523,18 @@ body {
 }
 
 .reqbody input {
-  ffont-size: 13px;
+  font-size: 13px;
   background-color: #fdfdfd;
   width: 180px;
+  height: 48px;
+  border-radius: 4px;
+  border: solid 1px #cccccc;
+}
+
+.reqbody input.payy {
+  font-size: 13px;
+  background-color: #fdfdfd;
+  width: 80%;
   height: 48px;
   border-radius: 4px;
   border: solid 1px #cccccc;
@@ -566,10 +575,6 @@ body {
 
 .reqbody div.filterform1 .btn-export:hover {
   background-color: #1d2834;
-}
-
-.reqbody .tabletype {
-  /* Rounded sliders */
 }
 
 .reqbody .tabletype a {
@@ -662,66 +667,6 @@ body {
 
 .reqbody .tabletype .modal .btn-can {
   background-color: #F5F5F5;
-}
-
-.reqbody .tabletype .switch {
-  position: relative;
-  display: inline-block;
-  width: 34px;
-  height: 20px;
-}
-
-.reqbody .tabletype .switch input {
-  display: none;
-}
-
-.reqbody .tabletype .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
-}
-
-.reqbody .tabletype .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 2.5px;
-  background-color: white;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
-}
-
-.reqbody .tabletype input:checked + .slider {
-  background-color: #45d88e;
-}
-
-.reqbody .tabletype input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #45d88e;
-  box-shadow: 0 0 1px #45d88e;
-}
-
-.reqbody .tabletype input:checked + .slider:before {
-  -webkit-transform: translateX(14px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
-}
-
-.reqbody .tabletype .slider.round {
-  border-radius: 34px;
-}
-
-.reqbody .tabletype .slider.round:before {
-  border-radius: 50%;
 }
 
 .reg {
