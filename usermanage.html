@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <title>Merd|Cert</title>
@@ -135,8 +136,8 @@
                                       </button>
                                 </div> -->
                                 <li class="nav-item d-flex under">
-                                    <a href="" class="nav-link align-self-center pl-0 pb-0"> <span><img src="img/requestpack.svg" width="24px" height="24px" style="margin-right:1.35rem"  alt="requestpage_icon"></span>LAYOUT</a>
-                                  </li>
+                                  <a href="" class="nav-link align-self-center pl-0 pb-0"> <span><img src="img/requestpack.svg" width="24px" height="24px" style="margin-right:1.35rem"  alt="requestpage_icon"></span>ALL REQUEST</a>
+                                </li>
                        </ul>
                        <ul class="nav d-flex align-content-stretch nav-pan">
                           <div class="navbar-toggle d-inline">
@@ -203,49 +204,61 @@
                   </div>
             </header>
 
-            <div class="container">
-                
-                <div class="tabletype">
-                    <table class="table table-hover table-bordered text-muted table-responsive-xs">
-                        <thead class="table-borderless" >
-                          <tr>
-                            <th scope="col">ROLE NAME</th>
-                            <th scope="col">SYSTEM NAME</th>
-                            <th scope="col">STATUS</th>
-                            <th scope="col">ACTION</th>
-                            
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Medical Records</th>
-                            <td>Medical Records</td>
-                            
-                            <td>
-                              <div class="row justify-content-start mx-0">
-                                  <p>deactivate</p>
-                                    <label class="switch mx-2">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                          <p>activate</p>
-                              </div>
-                                    
-                            </td>
-                           
-                            <td>
-                                    <ul class="list-inline action">
-                                            <li class="list-inline-item"><a href=""><i class="fas fa-trash"></i>Delete</a></li>
-                                            <li class="list-inline-item"><a href=""><i class="fas fa-pencil-alt"></i>Edit</a></li>
-                                    </ul> 
-                        </td>
-                          </tr>
+            <!-- request -->
 
-                          <tr class="strip">
-                                        <th scope="row">Megalek</th>
-                                        <td>Megalek</td>
-                                       
-                                        <td>
+            <div class="container reqbody">
+              <div class="container px-0">
+                  
+                    <!-- end card deets -->
+                  
+                    <div class="row justify-content-end filterform1 px-3">
+                     
+
+                             <button class="btn btn-filter align-self-center"><i class="fas fa-user-plus pr-1"></i>CREATE ROLE</button>
+                           
+                           
+               </div>
+
+                            <!-- end filter form -->
+                              <div class="tabletype">
+                                  <table class="table table-bordered table-striped px-0 table-hover">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">ROLE NAME</th>
+                                          <th scope="col">SYSTEM NAME</th>
+                                          <th scope="col">STATUS</th>
+                                          <th scope="col">ACTION</th>
+                                      
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">User</th>
+                                          <td>Megalek</td>
+                                          <td>
+                                              <div class="row justify-content-start mx-0">
+                                                  <p>deactivate</p>
+                                                    <label class="switch mx-2">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                          </label>
+                                                          <p>activate</p>
+                                              </div>
+                                                    
+                                            </td>
+                                          <td>
+                                              <div class="d-flex justify-content-start">
+                                                  <a href="#" class="mr-3"><i class="fas fa-trash pr-1"></i>Delete</a>
+                                              <a href="#"><i class="fas fa-compress pr-1"></i>View</a>
+                                            </div>
+                                          </td>
+                                      
+  
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">User</th>
+                                            <td>Megalek</td>
+                                            <td>
                                                 <div class="row justify-content-start mx-0">
                                                     <p>deactivate</p>
                                                       <label class="switch mx-2">
@@ -256,22 +269,92 @@
                                                 </div>
                                                       
                                               </td>
+                                            <td>
+                                                <div class="d-flex justify-content-start">
+                                                    <a href="#" class="mr-3"><i class="fas fa-trash pr-1"></i>Delete</a>
+                                                <a href="#"><i class="fas fa-compress pr-1"></i>View</a>
+                                              </div>
+                                            </td>
                                         
-                                        <td>
-                                                <ul class="list-inline action">
-                                                        <li class="list-inline-item"><a href=""><i class="fas fa-trash"></i>Delete</a></li>
-                                                        <li class="list-inline-item"><a href=""><i class="fas fa-pencil-alt"></i>Edit</a></li>
-                                                </ul>
-                                        </td>
-                                      </tr>
-                         
+    
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">User</th>
+                                              <td>Megalek</td>
+                                              <td>
+                                                  <div class="row justify-content-start mx-0">
+                                                      <p>deactivate</p>
+                                                        <label class="switch mx-2">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                              </label>
+                                                              <p>activate</p>
+                                                  </div>
+                                                        
+                                                </td>
+                                              <td>
+                                                  <div class="d-flex justify-content-start">
+                                                      <a href="#" class="mr-3"><i class="fas fa-trash pr-1"></i>Delete</a>
+                                                  <a href="#"><i class="fas fa-compress pr-1"></i>View</a>
+                                                </div>
+                                              </td>
+                                          
+      
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">User</th>
+                                                <td>Megalek</td>
+                                                <td>
+                                                    <div class="row justify-content-start mx-0">
+                                                        <p>deactivate</p>
+                                                          <label class="switch mx-2">
+                                                                  <input type="checkbox">
+                                                                  <span class="slider round"></span>
+                                                                </label>
+                                                                <p>activate</p>
+                                                    </div>
+                                                          
+                                                  </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="#" class="mr-3"><i class="fas fa-trash pr-1"></i>Delete</a>
+                                                    <a href="#"><i class="fas fa-compress pr-1"></i>View</a>
+                                                  </div>
+                                                </td>
+                                            
         
-                        </tbody>
-                      </table>
-                </div>
+                                              </tr>
+                                  
+                                      
+                                      </tbody>
+                                    </table>
+                              </div>
+                          
+              </div>
+        
+             
+            
             </div>
-     
-
+            <!-- pag -->
+            <div style="height:30px;"></div>
+            <div class="container pag">
+                 <nav>
+                             
+                           <ul class="pagination justify-content-between">
+                               <p>Showing 10 of 103 entries</p>
+                             
+                             <ul class="nav">
+                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                 <li class="page-item">
+                                   <a class="page-link" href="#">...</a>
+                                 </li>
+                             </ul>
+                           </ul>
+                         </nav>
+       </div>
+       <!-- pagination end -->
           </main>
       </div>
      </div>
