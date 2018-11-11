@@ -146,6 +146,8 @@ body{
         text-align: center;
     }
 
+    }
+ 
    .formtop{
     width: 366px;
     height: 530px !important;
@@ -232,13 +234,71 @@ a{
 }
  }
 
-}
+
 
 
 
 
 .dashboard{
 
+      //dashboard
+      .dash{
+        margin-top:30px;
+     img.card-img-absolute{
+         position: absolute;
+top: 10px;
+left: 21px;
+
+}
+
+h4.font-weight-normal{
+    font-size: 14px;
+}
+h2.dashinfo{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+h6.card-text{
+    font-size: 10px;
+}
+
+div.grad1{
+    height: 40px;
+    background-color: #4286f4;
+    font-size: 10px;
+
+    a{
+        color: white;
+    }
+}
+div.grad2{
+    height: 40px;
+    background-image: linear-gradient(to left, #0083b0, #00b4db);
+    font-size: 10px;
+
+    a{
+        color: white;
+    }
+}
+div.grad3{
+    height: 40px;
+    background-image: linear-gradient(to left, #51bf9b, #2193b0);
+    font-size: 10px;
+
+    a{
+        color: white;
+    }
+}
+div.grad4{
+    height: 40px;
+    background-color: #646e77;
+    font-size: 10px;
+
+    a{
+        color: white;
+    }
+}
+}
 
     .menu-sidebar{
         background-color:$sidebarbg;
@@ -602,6 +662,16 @@ a{
            }
            .modal{
 
+
+        input{
+            font-size: 13px;
+            width: 100%;
+            height: 45px;
+            border-radius: 3px;
+            background-color: #fdfdfd;
+           }
+
+
             select#inputService{
                 width: 100%;
             }
@@ -649,9 +719,85 @@ a{
             .btn-can{
                 background-color: #F5F5F5;
             }
+            .btncan{
+            
+                background-color: #f5f5f5;    
+                height: 49px;
+               
+    
+            }
+    
+            .btn-primary{
+                background-color: $customtextcolor;
+                width: 140px;
+                height: 49px;
+                border-color:$customtextcolor;
+                border-radius: 4px;
+                &:hover{
+                    background-color: darken($customtextcolor,5%)
+                }
+    
+            }
          }
  
-        
+       //
+       .switch {
+        position: relative;
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+      }
+      
+     .switch input {
+        display: none;
+      }
+      
+     .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 2.5px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+     input:checked + .slider {
+        background-color: #45d88e;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #45d88e;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(14px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+      }
+      
+     .slider.round {
+        border-radius: 34px;
+      }
+      
+     .slider.round:before {
+        border-radius: 50%;
+      }
+       //
 
   
         }

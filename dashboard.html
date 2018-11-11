@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <title>Merd|Cert</title>
   </head>
   <body class="h-100">
@@ -30,7 +32,7 @@
 
                 <li class="nav-item w-100 active">
                     <a href="#" class="nav-link sidemenulink">
-                        <i class="fas fa-tachometer-alt icon"></i>
+                       <span><img src="img/dashboard.svg"  class="iconst" alt="dashboardicon"></span>
                       <span class="menutitle">Dashboard</span>
                       <i class="fas fa-angle-right float-right"></i>
                     </a>
@@ -40,7 +42,7 @@
                 <li class="nav-item w-100">
                    
                   <a  class="nav-link sidemenulink" href="#req-basic" data-toggle="collapse" aria-expanded="false" aria-controls="req-basic">
-                        <i class="fas fa-tachometer-alt icon"></i>
+                    <span><img src="img/request.svg" class="iconst"  alt="dashboardicon"></span>
                       <span class="menutitle">Request
                       </span>
                       <span class="menutitle badge badge-req">10+</span> 
@@ -51,12 +53,17 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <i class="fas fa-angle-right icon"></i>
-                              Patient</a>
+                                All Request</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <i class="fas fa-angle-right icon"></i>
-                              New Request</a>
+                                Initiate Request</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                Register New Patient</a>
                           </li>
                         </ul>
                       </div>
@@ -67,7 +74,7 @@
                 <li class="nav-item w-100">
                    
                     <a  class="nav-link sidemenulink" href="#pay-basic" data-toggle="collapse" aria-expanded="false" aria-controls="pay-basic">
-                          <i class="fas fa-tachometer-alt icon"></i>
+                      <span><img src="img/payment.svg" class="iconst" alt="dashboardicon"></span>
                         <span class="menutitle">Payment
                         </span>
                         <span class="menutitle badge badge-pay">new</span> 
@@ -91,7 +98,7 @@
                   <!--  -->
                   <li class="nav-item w-100">
                       <a href="#" class="nav-link sidemenulink">
-                          <i class="fas fa-tachometer-alt icon"></i>
+                        <span><img src="img/usermanage.svg" class="iconst" alt="dashboardicon"></span>
                         <span class="menutitle">User Management</span>
                       
                       </a>
@@ -99,14 +106,14 @@
                   <!--  -->
                   <li class="nav-item w-100">
                       <a href="#" class="nav-link sidemenulink">
-                          <i class="fas fa-tachometer-alt icon"></i>
+                        <span><img src="img/sign.svg" class="iconst" alt="dashboardicon"></span>
                         <span class="menutitle">E-Signatures</span>
                       </a>
                   </li>
                   <!--  -->
                   <li class="nav-item w-100">
                       <a href="#" class="nav-link sidemenulink">
-                          <i class="fas fa-tachometer-alt icon"></i>
+                        <span><img src="img/set.svg" class="iconst" alt="dashboardicon"></span>
                         <span class="menutitle">Settings</span>
                       </a>
                   </li>
@@ -120,30 +127,157 @@
                   <div class="container">
                     <nav class="d-flex justify-content-between align-content-stretch pageclr">
                        <ul class="nav d-flex align-content-stretch nav-pan">
-                            <div class="navbar-toggle d-inline">
+                            <!-- <div class="navbar-toggle d-inline">
                                     <button type="button" class="navbar-toggler pageclr" id="spin">
                                         <span class="navbar-toggle-bar bar1"></span>
                                         <span class="navbar-toggle-bar bar2"></span>
                                         <span class="navbar-toggle-bar bar3"></span>
                                       </button>
-                                </div>
-                         <li class="nav-item d-flex">
-                           <a href="" class="nav-link align-self-center"><span class="pr-2" style="border-left:2px solid #333;height: 4rem;"></span> REQUEST</a>
-                         </li>
+                                </div> -->
+                                <li class="nav-item d-flex under">
+                                    <a href="" class="nav-link align-self-center pl-0 pb-0"> <span><img src="img/dashboardic.png" width="24px" height="24px" style="margin-right:1.35rem"  alt="requestpage_icon"></span>DASHBOARD</a>
+                                  </li>
                        </ul>
-                       
-                          <li class="nav-item d-flex drop-down">
-                            <a href="#" id="logout-basic" class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Adewale Jr</a>
-                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="logout-basic">
-                                <li class="dropdown-item"> <a href="#" class="nav-link"><i class="fas fa-headset pr-2 text-success"></i>Admin support</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><a href="#" class="nav-link"><i class="fas fa-sign-out-alt pr-2 text-danger"></i>Logout</a></li>
+                       <ul class="nav d-flex align-content-stretch nav-pan">
+                          <div class="navbar-toggle d-inline">
+                            <button type="button" class="navbar-toggler pageclr" id="spin">
+                                <span class="navbar-toggle-bar bar1"></span>
+                                <span class="navbar-toggle-bar bar2"></span>
+                                <span class="navbar-toggle-bar bar3"></span>
+                              </button>
+                        </div>
+
+                        <li class="nav-item d-flex align-content-stretch mx-2">
+                          <a href="" class="align-self-center mic"  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bullhorn"></i><span><div class="rednote"></div></span></a>
+                          <ul class="dropdown-menu dropdown-menu-right px-2 shadow mt-2 notify">
+                            <li>
+                              <div class="d-flex flex-row justify-content-between" style="height:18px;">
+                                <p>APP NOTIFICATION</p>
+                                <a href="" class="badge badge-note">VIEW ALL</a>
+                              </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">You have <b>3 new themes</b> trending</div>
+                                  <div class="top-text-light">15 minutes ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b></div>
+                                  <div class="top-text-light">2 hours ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">New asset recommendations in <b>5 themes</b></div>
+                                  <div class="top-text-light">4 hours ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">Assets specifications modified in themes</div>
+                                  <div class="top-text-light">4 hours ago</div>
+                                </a> 
+                              </li>
+                             
                             </ul>
-                          </li>
+                        </li>
+
+                        <li class="nav-item d-flex drop-down">
+                          <a href="#" id="logout-basic" class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Adewale Jr</a>
+                          <ul class="dropdown-menu border-0 shadow" aria-labelledby="logout-basic">
+                              <li class="dropdown-item"> <a href="#" class="nav-link"><i class="fas fa-headset pr-2 text-success"></i>Admin support</a></li>
+                              <li class="dropdown-divider"></li>
+                              <li class="dropdown-item"><a href="#" class="nav-link"><i class="fas fa-sign-out-alt pr-2 text-danger"></i>Logout</a></li>
+                          </ul>
+                        </li>
+                         </ul>
+                       
                       
                     </nav>
                   </div>
             </header>
+            <div class="container dash">
+                <div class="row">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="img/requestpack.png" class="card-img-absolute" alt="circle-image"/>
+                          <h4 class="font-weight-normal mb-3">Requests
+                              <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                          </h4>
+                          <h2 class="dashinfo">4,700</h2>
+                          <h6 class="card-text float-right"> <span><img src="img/down.png" alt=""></span>6%</h6>
+                        </div>
+                        <div class="card-footer grad1 text-white">
+                            <div class="d-flex justify-content-between">
+                              <p class="fl">Last 30 days</p>
+                              <a href="#" class="fr">View more</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-body">
+                            <img src="img/requestpack.png" class="card-img-absolute" alt="circle-image"/>                 
+                          <h4 class="font-weight-normal mb-3">Reports Generated
+                              <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                          </h4>
+                          <h2 class="dashinfo">4,408</h2>
+                          <h6 class="card-text float-right"><span><img src="img/up.png" alt=""></span>10%</h6>
+                        </div>
+                        <div class="card-footer grad2 text-white">
+                            <div class="d-flex justify-content-between">
+                              <p class="fl">Last 30 days</p>
+                              <a href="#" class="fr">View more</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-body">
+                            <img src="img/requestpack.png" class="card-img-absolute" alt="circle-image"/>                                  
+                          <h4 class="font-weight-normal mb-3">Revenue Generated
+                              <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                          </h4>
+                          <h2 class="dashinfo">24,000,741</h2>
+                          <h6 class="card-text float-right"><span><img src="img/up.png" alt=""></span>31%</h6>
+                        </div>
+                        <div class="card-footer grad3 text-white">
+                            <div class="d-flex justify-content-between">
+                              <p class="fl">Last 30 days</p>
+                              <a href="#" class="fr">View more</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                          <div class="card-body">
+                              <img src="img/requestpack.png" class="card-img-absolute" alt="circle-image"/>                                  
+                            <h4 class="font-weight-normal mb-3">Avrg. Request Compl. Time
+                                <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                            </h4>
+                            <h2 class="dashinfo">48 hours </h2>
+                            <h6 class="card-text float-right"><span><img src="img/down.png" alt=""></span>4hrs</h6>
+                          </div>
+                          <div class="card-footer grad4 text-white">
+                              <div class="d-flex justify-content-between">
+                                <p class="fl">Last 30 days</p>
+                                <a href="#" class="fr">View more</a>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
           </main>
       </div>
      </div>

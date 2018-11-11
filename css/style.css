@@ -74,7 +74,7 @@ body {
   text-align: center;
 }
 
-.caratop .carousel-inner .formtop {
+.caratop .formtop {
   width: 366px;
   height: 530px !important;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -84,62 +84,62 @@ body {
   height: 100vh;
 }
 
-.caratop .carousel-inner .formtop a {
+.caratop .formtop a {
   color: #1fb986;
 }
 
-.caratop .carousel-inner .formtop img.logo {
+.caratop .formtop img.logo {
   margin-top: 60px;
   width: 240px;
   height: 60px;
 }
 
-.caratop .carousel-inner .formtop label {
+.caratop .formtop label {
   color: #333;
 }
 
-.caratop .carousel-inner .formtop .form-group {
+.caratop .formtop .form-group {
   position: relative;
 }
 
-.caratop .carousel-inner .formtop .fa {
+.caratop .formtop .fa {
   position: absolute;
   right: 20px;
   top: 18px;
 }
 
-.caratop .carousel-inner .formtop input {
+.caratop .formtop input {
   height: 45px;
   border-radius: 3px;
   border: solid 1px #cccccc;
   background-color: #fdfdfd;
 }
 
-.caratop .carousel-inner .formtop ::-webkit-input-placeholder {
+.caratop .formtop ::-webkit-input-placeholder {
   color: #d8d8d8;
   opacity: 0.5;
   font-size: 14px;
 }
 
-.caratop .carousel-inner .formtop :-ms-input-placeholder {
+.caratop .formtop :-ms-input-placeholder {
   color: #d8d8d8;
   opacity: 0.5;
   font-size: 14px;
 }
 
-.caratop .carousel-inner .formtop ::-ms-input-placeholder {
+.caratop .formtop ::-ms-input-placeholder {
   color: #d8d8d8;
   opacity: 0.5;
   font-size: 14px;
 }
 
-.caratop .carousel-inner .formtop ::placeholder {
+.caratop .formtop ::placeholder {
   color: #d8d8d8;
   opacity: 0.5;
   font-size: 14px;
 }
 
-.caratop .carousel-inner .formtop .btn {
+.caratop .formtop .btn {
   width: 140px;
   height: 49px;
   border-radius: 4px;
@@ -148,11 +148,11 @@ body {
   background-color: #1fb986;
 }
 
-.caratop .carousel-inner .formtop .btn:hover {
+.caratop .formtop .btn:hover {
   background-color: #1ba376;
 }
 
-.caratop .carousel-inner .formtop .btn.btn-block {
+.caratop .formtop .btn.btn-block {
   width: 100%;
   height: 49px;
   border-radius: 4px;
@@ -161,23 +161,92 @@ body {
   background-color: #1fb986;
 }
 
-.caratop .carousel-inner .formtop .btn.btn-block:hover {
+.caratop .formtop .btn.btn-block:hover {
   background-color: #1ba376;
 }
 
-.caratop .carousel-inner .formtop h5 {
+.caratop .formtop h5 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.caratop .carousel-inner .formtop p {
+.caratop .formtop p {
   font-size: 12px;
   color: #45d88e;
   text-align: right;
 }
 
-.caratop .carousel-inner .formtop h6 {
+.caratop .formtop h6 {
   padding-bottom: 48px;
+}
+
+.dashboard .dash {
+  margin-top: 30px;
+}
+
+.dashboard .dash img.card-img-absolute {
+  position: absolute;
+  top: 10px;
+  left: 21px;
+}
+
+.dashboard .dash h4.font-weight-normal {
+  font-size: 14px;
+}
+
+.dashboard .dash h2.dashinfo {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.dashboard .dash h6.card-text {
+  font-size: 10px;
+}
+
+.dashboard .dash div.grad1 {
+  height: 40px;
+  background-color: #4286f4;
+  font-size: 10px;
+}
+
+.dashboard .dash div.grad1 a {
+  color: white;
+}
+
+.dashboard .dash div.grad2 {
+  height: 40px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0083b0), to(#00b4db));
+  background-image: -webkit-linear-gradient(right, #0083b0, #00b4db);
+  background-image: -o-linear-gradient(right, #0083b0, #00b4db);
+  background-image: linear-gradient(to left, #0083b0, #00b4db);
+  font-size: 10px;
+}
+
+.dashboard .dash div.grad2 a {
+  color: white;
+}
+
+.dashboard .dash div.grad3 {
+  height: 40px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#51bf9b), to(#2193b0));
+  background-image: -webkit-linear-gradient(right, #51bf9b, #2193b0);
+  background-image: -o-linear-gradient(right, #51bf9b, #2193b0);
+  background-image: linear-gradient(to left, #51bf9b, #2193b0);
+  font-size: 10px;
+}
+
+.dashboard .dash div.grad3 a {
+  color: white;
+}
+
+.dashboard .dash div.grad4 {
+  height: 40px;
+  background-color: #646e77;
+  font-size: 10px;
+}
+
+.dashboard .dash div.grad4 a {
+  color: white;
 }
 
 .dashboard .menu-sidebar {
@@ -625,6 +694,14 @@ body {
   color: #d63f3f;
 }
 
+.reqbody .tabletype .modal input {
+  font-size: 13px;
+  width: 100%;
+  height: 45px;
+  border-radius: 3px;
+  background-color: #fdfdfd;
+}
+
 .reqbody .tabletype .modal select#inputService {
   width: 100%;
 }
@@ -667,6 +744,83 @@ body {
 
 .reqbody .tabletype .modal .btn-can {
   background-color: #F5F5F5;
+}
+
+.reqbody .tabletype .modal .btncan {
+  background-color: #f5f5f5;
+  height: 49px;
+}
+
+.reqbody .tabletype .modal .btn-primary {
+  background-color: #1fb986;
+  width: 140px;
+  height: 49px;
+  border-color: #1fb986;
+  border-radius: 4px;
+}
+
+.reqbody .tabletype .modal .btn-primary:hover {
+  background-color: #1ba376;
+}
+
+.reqbody .tabletype .switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.reqbody .tabletype .switch input {
+  display: none;
+}
+
+.reqbody .tabletype .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.reqbody .tabletype .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.reqbody .tabletype input:checked + .slider {
+  background-color: #45d88e;
+}
+
+.reqbody .tabletype input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #45d88e;
+  box-shadow: 0 0 1px #45d88e;
+}
+
+.reqbody .tabletype input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+.reqbody .tabletype .slider.round {
+  border-radius: 34px;
+}
+
+.reqbody .tabletype .slider.round:before {
+  border-radius: 50%;
 }
 
 .reg {

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Merd|Cert</title>
+  </head>
+  <body class="h-100">
+   <!-- Begin -->
+
+     <div class="container-fluid" id="wrapper"> 
+         
+      <div class="row dashboard">
+          <aside class="menu-sidebar col-xs-12 col-sm-3 col-lg-2 px-0 position-fixed shadow" style="height:100vh;">
+            <div class="logo d-flex flex-row align-items-center">
+                <a href="#">LRA</a>
+            </div>
+
+            <ul class="nav sidemenu">
+                <li class="nav-item w-100">
+                  <a href="#" class="nav-link sidemenu-title">Navigation</a>
+                </li>
+
+                <li class="nav-item w-100 active">
+                    <a href="#" class="nav-link sidemenulink">
+                       <span><img src="img/dashboard.svg"  class="iconst" alt="dashboardicon"></span>
+                      <span class="menutitle">Dashboard</span>
+                      <i class="fas fa-angle-right float-right"></i>
+                    </a>
+                </li>
+
+                <!--  -->
+                <li class="nav-item w-100">
+                   
+                  <a  class="nav-link sidemenulink" href="#req-basic" data-toggle="collapse" aria-expanded="false" aria-controls="req-basic">
+                    <span><img src="img/request.svg" class="iconst"  alt="dashboardicon"></span>
+                      <span class="menutitle">Request
+                      </span>
+                      <span class="menutitle badge badge-req">10+</span> 
+                      <i class="fas fa-angle-right float-right js-rotate-if-collapsed"></i>
+                    </a>
+                    <div class="collapse" id="req-basic">
+                        <ul class="nav flex-column submenu">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                All Request</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                Initiate Request</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-angle-right icon"></i>
+                                Register New Patient</a>
+                          </li>
+                        </ul>
+                      </div>
+                </li>
+
+                <!--  -->
+
+                <li class="nav-item w-100">
+                   
+                    <a  class="nav-link sidemenulink" href="#pay-basic" data-toggle="collapse" aria-expanded="false" aria-controls="pay-basic">
+                      <span><img src="img/payment.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">Payment
+                        </span>
+                        <span class="menutitle badge badge-pay">new</span> 
+                        <i class="fas fa-angle-right float-right js-rotate-if-collapsed"></i>
+                      </a>
+                      <div class="collapse" id="pay-basic">
+                          <ul class="nav flex-column submenu">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <i class="fas fa-angle-right icon"></i>
+                                Patient</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <i class="fas fa-angle-right icon"></i>
+                                New Request</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </li>
+                  <!--  -->
+                  <li class="nav-item w-100">
+                      <a href="#" class="nav-link sidemenulink">
+                        <span><img src="img/usermanage.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">User Management</span>
+                      
+                      </a>
+                  </li>
+                  <!--  -->
+                  <li class="nav-item w-100">
+                      <a href="#" class="nav-link sidemenulink">
+                        <span><img src="img/sign.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">E-Signatures</span>
+                      </a>
+                  </li>
+                  <!--  -->
+                  <li class="nav-item w-100">
+                      <a href="#" class="nav-link sidemenulink">
+                        <span><img src="img/set.svg" class="iconst" alt="dashboardicon"></span>
+                        <span class="menutitle">Settings</span>
+                      </a>
+                  </li>
+            </ul>
+          </aside>
+
+          <!-- end of side bar -->
+
+          <main class="main col-lg-10 col-sm-9 col-md-9 col-xs-12 offset-lg-2 offset-md-3 px-0">
+            <header class="main-head sticky-top">
+                  <div class="container">
+                    <nav class="d-flex justify-content-between align-content-stretch pageclr">
+                       <ul class="nav d-flex align-content-stretch nav-pan">
+                            <!-- <div class="navbar-toggle d-inline">
+                                    <button type="button" class="navbar-toggler pageclr" id="spin">
+                                        <span class="navbar-toggle-bar bar1"></span>
+                                        <span class="navbar-toggle-bar bar2"></span>
+                                        <span class="navbar-toggle-bar bar3"></span>
+                                      </button>
+                                </div> -->
+                                <li class="nav-item d-flex under">
+                                  <a href="" class="nav-link align-self-center pl-0 pb-0"> <span><img src="img/requestpack.svg" width="24px" height="24px" style="margin-right:1.35rem"  alt="requestpage_icon"></span>PAYMENT REQUEST</a>
+                                </li>
+                       </ul>
+                       <ul class="nav d-flex align-content-stretch nav-pan">
+                          <div class="navbar-toggle d-inline">
+                            <button type="button" class="navbar-toggler pageclr" id="spin">
+                                <span class="navbar-toggle-bar bar1"></span>
+                                <span class="navbar-toggle-bar bar2"></span>
+                                <span class="navbar-toggle-bar bar3"></span>
+                              </button>
+                        </div>
+
+                        <li class="nav-item d-flex align-content-stretch mx-2">
+                          <a href="" class="align-self-center mic"  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bullhorn"></i><span><div class="rednote"></div></span></a>
+                          <ul class="dropdown-menu dropdown-menu-right px-2 shadow mt-2 notify">
+                            <li>
+                              <div class="d-flex flex-row justify-content-between" style="height:18px;">
+                                <p>APP NOTIFICATION</p>
+                                <a href="" class="badge badge-note">VIEW ALL</a>
+                              </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">You have <b>3 new themes</b> trending</div>
+                                  <div class="top-text-light">15 minutes ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b></div>
+                                  <div class="top-text-light">2 hours ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">New asset recommendations in <b>5 themes</b></div>
+                                  <div class="top-text-light">4 hours ago</div>
+                                </a> 
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                <a href="#" class="top-text-block">
+                                  <div class="top-text-heading">Assets specifications modified in themes</div>
+                                  <div class="top-text-light">4 hours ago</div>
+                                </a> 
+                              </li>
+                             
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-flex drop-down">
+                          <a href="#" id="logout-basic" class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Adewale Jr</a>
+                          <ul class="dropdown-menu border-0 shadow" aria-labelledby="logout-basic">
+                              <li class="dropdown-item"> <a href="#" class="nav-link"><i class="fas fa-headset pr-2 text-success"></i>Admin support</a></li>
+                              <li class="dropdown-divider"></li>
+                              <li class="dropdown-item"><a href="#" class="nav-link"><i class="fas fa-sign-out-alt pr-2 text-danger"></i>Logout</a></li>
+                          </ul>
+                        </li>
+                         </ul>
+                       
+                      
+                    </nav>
+                  </div>
+            </header>
+
+            <!-- request -->
+
+            <div class="container reqbody">
+              <div class="container px-0">
+                  <div class="row px-3">
+                      <div class="col-xs-3">
+                          <div class="card shadow">
+                              <div class="card-body thestyle" style="padding:11px;">
+                                  <div class="media">
+                                      <img class="mr-3" src="img/pendicon.svg" width="73px" height="77px" alt="">
+                                      <div class="media-body">
+                                        <h6 class="mt-0">PENDING PAYMENT</h6>
+                                        <p style="font-size:20px;font-weight:700;">60</p>
+                                        <a href="" class="float-right"><i class="far fa-eye"></i></a>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                    <!-- end card deets -->
+                  
+                        <div class="row justify-content-between filterform1 px-3">
+                                     <div class="form-group col-md-2 px-0">
+                                            <label for="inputEmail4">First Name</label>
+                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Firstname">
+                                          </div>
+                                          <div class="form-group col-md-2 px-0">
+                                              <label for="inputEmail4">last Name</label>
+                                              <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Lastname">
+                                            </div>
+                                          <div class="form-group col-md-2 px-0">
+                                                    <label for="inputEmail4">From date</label>
+                                                    <input type="date" class="form-control datefade" id="inputEmail4">
+                                          </div>
+                                          <div class="form-group col-md-2 px-0">
+                                                            <label for="inputEmail4">To date</label>
+                                                            <input type="date" class="form-control datefade" id="inputEmail4">
+                                                           
+                                          </div>
+
+                                          <button class="btn btn-filter align-self-center" >FILTER</button>
+                                          <button class="btn btn-export align-self-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cloud-upload-alt pr-1"></i>EXPORT</button>
+                                          <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                              <div class="dropdown-divider"></div>
+                                              <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        
+                            </div>
+
+                            <!-- end filter form -->
+                              <div class="tabletype">
+                                  <table class="table table-bordered table-striped px-0 table-hover w-100">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" width="2%">S/N</th>
+                                          <th scope="col" width="10%">REQUEST NO</th>
+                                          <th scope="col" width="17%">PATIENT’S NAME</th>
+                                          <th scope="col" width="18%">REPORT TYPE</th>
+                                          <th scope="col" width="10%">AMOUNT</th>
+                                          <th scope="col" width="6%">PAYMENT STATUS</th>
+                                          <th scope="col" width="10%">DATE</th>
+                                          <th scope="col" width="16%">ACTION</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                     
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>REQ/7/181006822</td>
+                                            <td>Olamide Oluwaseun</td>
+                                            <td>Medical Report of fitness</td>
+                                            <td>₦5000</td>
+                                            <td>
+                                             <span class="d-flex align-item-center">
+                                                <span class="align-self-center mr-2"><div class="pendclr"></div></span>
+                                                Pending
+                                             </span>
+                                              
+                                            
+                                             </td>
+                                          
+                                            <td>26 Oct 2018</td>
+                                            <td>
+                                               <div class="d-flex justify-content-start action">
+                                                    <a href="" data-toggle="modal" data-target="#exampleModal">
+                                                            <i class="fas fa-coins pr-1"></i> Update Payment
+                                                          </a>
+                                                      
+                                                          <!-- Modal -->
+                                                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog" role="document">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                            <h4 class="px-4 pb-3"><img src="image/wallet.svg"
+                                                                                class="wallet pr-2"><span>Update payment</span></h4>
+                                                                            <div class="form-group px-4">
+                                                                                
+
+                                                                                    <label for="inputService">Transaction ID</label>
+                                                                                    <input id="inputService" class="form-control" placeholder="|write something here">
+                                                                                                    
+                                                                                    
+                                                                    </div>
+                                                                    <!-- 1 -->
+                                                                    <div class="form-group px-4">
+
+                                                                            <label for="inputService">Reciept Number</label>
+                                                                            <input id="inputService" class="form-control" placeholder="|write something here">
+                                                                                                    
+                                                            </div>
+                                                            <!-- 2 -->
+                                                            <div class="form-group px-4">
+
+                                                                    <label for="inputService">Bill Reference</label>
+                                                                    <input id="inputService" class="form-control" placeholder="|write something here">
+                                                                                                    
+                                                    </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btncan" data-dismiss="modal">SAVE</button>
+                                                                      <button type="button" class="btn btn-primary">UPDATE</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                
+                                            </div>
+                                            </td>
+                                           
+  
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">2</th>
+                                              <td>REQ/7/181006822</td>
+                                              <td>Olamide Oluwaseun</td>
+                                              <td>Medical Report of fitness</td>
+                                              <td>₦5000</td>
+                                              <td>
+                                               <span class="d-flex align-item-center">
+                                                  <span class="align-self-center mr-2"><div class="pendclr"></div></span>
+                                                  Pending
+                                               </span>
+                                                
+                                              
+                                               </td>
+                                               
+                                              <td>26 Oct 2018</td>
+                                              <td>
+                                                 <div class="d-flex justify-content-start action">
+                                                    <a href="#" class="mr-3"><i class="fas fa-coins pr-1"></i>Update Payment</a>
+                                                  
+                                              </div>
+                                              </td>
+                                             
+    
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>REQ/7/181006822</td>
+                                                <td>Olamide Oluwaseun</td>
+                                                <td>Medical Report of fitness</td>
+                                                <td>₦5000</td>
+                                                <td>
+                                                 <span class="d-flex align-item-center">
+                                                    <span class="align-self-center mr-2"><div class="pendclr"></div></span>
+                                                    Pending
+                                                 </span>
+                                                  
+                                                
+                                                 </td>
+                                
+                                                <td>26 Oct 2018</td>
+                                                <td>
+                                                   <div class="d-flex justify-content-start action">
+                                                      <a href="#" class="mr-3"><i class="fas fa-coins pr-1"></i>Update Payment</a>
+                                                  
+                                                </div>
+                                                </td>
+                                               
+      
+                                              </tr>
+                                         
+                                      
+                                      </tbody>
+                                    </table>
+                              </div>
+                          
+              </div>
+        
+             
+            
+            </div>
+            <!-- pag -->
+            <div style="height:30px;"></div>
+            <div class="container pag">
+                 <nav>
+                             
+                           <ul class="pagination justify-content-between">
+                               <p>Showing 10 of 103 entries</p>
+                             
+                             <ul class="nav">
+                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                 <li class="page-item">
+                                   <a class="page-link" href="#">...</a>
+                                 </li>
+                             </ul>
+                           </ul>
+                         </nav>
+       </div>
+       <!-- pagination end -->
+          </main>
+      </div>
+     </div>
+
+
+
+<!--  -->
+
+
+<!--  -->
+
+
+
+    <!-- Boostrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+ 
+  </body>
+</html>
