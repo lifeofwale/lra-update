@@ -249,6 +249,13 @@ body {
   color: white;
 }
 
+.dashboard .dash thead {
+  border: 0px;
+  background-color: #f3f3f3;
+  border-bottom: 3px solid #1fb986;
+  font-size: 10px;
+}
+
 .dashboard .menu-sidebar {
   background-color: #263544;
   -webkit-transition: all 0.5s;
