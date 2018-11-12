@@ -290,7 +290,7 @@
                                     <h6 class="mb-1 revmonth">Revenue by Report Type</h6>
                                     <p class="mb-0 repmonth">August, 2018</p>
                                   </div>
-                                  <i class="material-icons float-right btn btn-link" id="dropdownMenulist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                                  <i class="material-icons float-right btn" id="dropdownMenulist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
 
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenulist" style="height:200px;overflow:scroll;">
                                                     
@@ -379,8 +379,16 @@
                                           <h6 class="mb-1 revmonth">Revenue Generated Monthly for <span> <i> Medical Report of Fitness</i> </span></h6>
                                           <p class="mb-0 repmonth">2018</p>
                                         </div>
-                                        <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
-                                    </div>
+                                        <i class="material-icons float-right btn" id="dropdownMenulisttwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenulisttwo" style="height:150px;overflow:scroll;">
+                                            <a class="dropdown-item" href="#">2017</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">2018</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">2019</a>
+                                      <div class="dropdown-divider"></div>
+                                          </div>
+                                      </div>
                                 </div>
                                 <div class="card-body bg-light">
                                     <canvas id="myChart" width="auto" height="150px"></canvas>
@@ -403,8 +411,39 @@
                                     </div>
                                   </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-birth" role="tabpanel" aria-labelledby="v-pills-birth-tab">3</div>
-                            <div class="tab-pane fade" id="v-pills-police" role="tabpanel" aria-labelledby="v-pills-police-tab">4</div>
+                            <div class="tab-pane fade" id="v-pills-birth" role="tabpanel" aria-labelledby="v-pills-birth-tab">
+                                <div class="card">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="title">
+                                              <h6 class="mb-1 revmonth">Revenue Generated Monthly for <span> <i> Notification of 
+                                                  Birth Certificate</i> </span></h6>
+                                              <p class="mb-0 repmonth">2018</p>
+                                            </div>
+                                            <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-light">
+                                        <canvas id="myChartthree" width="auto" height="150px"></canvas>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-police" role="tabpanel" aria-labelledby="v-pills-police-tab">
+                                <div class="card">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="title">
+                                              <h6 class="mb-1 revmonth">Revenue Generated Monthly for <span> <i> Police Report</i> </span></h6>
+                                              <p class="mb-0 repmonth">2018</p>
+                                            </div>
+                                            <i class="material-icons float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more_vert</i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-light">
+                                        <canvas id="myChartfour" width="auto" height="150px"></canvas>
+                                    </div>
+                                  </div>
+                            </div>
                           </div>
                     </div>
                   </div>
@@ -476,27 +515,131 @@
     }
 });
     </script>
-    <script>
-        new Chart(document.getElementById("myCharttwo"), {
-        type: 'bar',
-        data: {
-          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-          datasets: [
-            {
-              label: "Month",
-              backgroundColor: ["#1fb987", "#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#263544","#1fb987","#1fb987","#1fb987","#1fb987"],
-              data: [3000000, 500000, 1000000 , 1500000, 2000000, 2500000, 2800000,2200000,1300000,900000,300000,270000]
-            }
-          ]
-        },
-        options: {
-          legend: { display: false },
-          title: {
-            display: true,
-            text: 'Month in 2018'
-          }
+<script>
+    new Chart(document.getElementById("myCharttwo"), {
+    type: 'bar',
+    
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      datasets: [
+        {
+          label: "Revenue for this month",
+          backgroundColor: ["#1fb987", "#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#263544","#1fb987","#1fb987","#1fb987","#1fb987"],
+          data: [300000, 500000, 1000000 , 1500000, 2000000, 2500000, 2800000,2200000,1300000,900000,300000,270000]
         }
-    });
-        </script>
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Month in 2018'
+      }, scales: {
+        yAxes: [{
+					ticks: {
+						beginAtZero:true,
+						userCallback: function(value, index, values) {
+							// Convert the number to a string and splite the string every 3 charaters from the end
+							value = value.toString();
+							value = value.split(/(?=(?:...)*$)/);
+							value = value.join(',');
+							return value;
+						}
+					}
+				}]
+          ,xAxes: [ { gridLines: { display: false } } ], yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: 'Amount(₦)'
+      }
+    }]
+        }
+    }
+});
+    </script>
+        <script>
+            new Chart(document.getElementById("myChartthree"), {
+            type: 'bar',
+            
+            data: {
+              labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+              datasets: [
+                {
+                  label: "Revenue for this month",
+                  backgroundColor: ["#1fb987", "#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#263544","#1fb987","#1fb987","#1fb987","#1fb987"],
+                  data: [30000, 500000, 1000000 , 1500000, 2000000, 2500000, 2800000,2200000,1300000,900000,300000,270000]
+                }
+              ]
+            },
+            options: {
+              legend: { display: false },
+              title: {
+                display: true,
+                text: 'Month in 2018'
+              }, scales: {
+                yAxes: [{
+                  ticks: {
+                    beginAtZero:true,
+                    userCallback: function(value, index, values) {
+                      // Convert the number to a string and splite the string every 3 charaters from the end
+                      value = value.toString();
+                      value = value.split(/(?=(?:...)*$)/);
+                      value = value.join(',');
+                      return value;
+                    }
+                  }
+                }]
+                  ,xAxes: [ { gridLines: { display: false } } ], yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: 'Amount(₦)'
+              }
+            }]
+                }
+            }
+        });
+            </script>
+            <script>
+                new Chart(document.getElementById("myChartfour"), {
+                type: 'bar',
+                
+                data: {
+                  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                  datasets: [
+                    {
+                      label: "Revenue for this month",
+                      backgroundColor: ["#1fb987", "#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#263544","#1fb987","#1fb987","#1fb987","#1fb987"],
+                      data: [30000, 500000, 1000000 , 1500000, 2000000, 2500000, 2800000,2200000,1300000,900000,300000,270000]
+                    }
+                  ]
+                },
+                options: {
+                  legend: { display: false },
+                  title: {
+                    display: true,
+                    text: 'Month in 2018'
+                  }, scales: {
+                    yAxes: [{
+                      ticks: {
+                        beginAtZero:true,
+                        userCallback: function(value, index, values) {
+                          // Convert the number to a string and splite the string every 3 charaters from the end
+                          value = value.toString();
+                          value = value.split(/(?=(?:...)*$)/);
+                          value = value.join(',');
+                          return value;
+                        }
+                      }
+                    }]
+                      ,xAxes: [ { gridLines: { display: false } } ], yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: 'Amount(₦)'
+                  }
+                }]
+                    }
+                }
+            });
+                </script>
   </body>
 </html>
