@@ -712,7 +712,7 @@ body {
 }
 
 .reqbody .tabletype .modal .modal-title {
-  color: #45526b;
+  color: #1fb986;
   font-size: 14px;
 }
 
@@ -1262,6 +1262,37 @@ body {
 .contentset ::placeholder {
   font-size: 13px;
   opacity: 0.4;
+}
+
+.contentset .modal .modal-content {
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contentset .modal .modal-title {
+  color: #1fb986;
+  font-size: 14px;
+}
+
+.contentset .modal .modal-header {
+  background-color: #263544;
+}
+
+.contentset .modal .modal-footer {
+  background-color: #f5f5f5;
+}
+
+.contentset .modal .btncan {
+  background-color: #f5f5f5;
+  height: 49px;
+}
+
+.contentset .modal .btn-primary {
+  background-color: #45d88e;
+  width: 140px;
+  height: 49px;
+  border-color: #1fb986;
+  border-radius: 4px;
 }
 
 .contentset p.email {
