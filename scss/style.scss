@@ -298,7 +298,24 @@ div.grad4{
         color: white;
     }
 }
+h6.revmonth{
+    font-size: 17px;
+}
 
+p.repmonth{
+    font-size: 10px;
+}
+
+td.green{
+    color:$customtextcolor;
+}
+td.red{
+    color:$requestbgclr;
+}
+
+td.bold{
+    font-weight: bold;
+}
 //graph
 thead{
     border:0px;

@@ -249,6 +249,26 @@ body {
   color: white;
 }
 
+.dashboard .dash h6.revmonth {
+  font-size: 17px;
+}
+
+.dashboard .dash p.repmonth {
+  font-size: 10px;
+}
+
+.dashboard .dash td.green {
+  color: #1fb986;
+}
+
+.dashboard .dash td.red {
+  color: #ff5370;
+}
+
+.dashboard .dash td.bold {
+  font-weight: bold;
+}
+
 .dashboard .dash thead {
   border: 0px;
   background-color: #f3f3f3;

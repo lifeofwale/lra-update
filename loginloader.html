@@ -1,0 +1,328 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <style>
+            /* Center the loader */
+            #loader {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 1;
+              width: 150px;
+              height: 150px;
+              margin: -75px 0 0 -75px;
+              border: 16px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 16px solid #3498db;
+              width: 120px;
+              height: 120px;
+              -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+            }
+            
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+            }
+            
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            
+            /* Add animation to "page content" */
+            .animate-bottom {
+              position: relative;
+              -webkit-animation-name: animatebottom;
+              -webkit-animation-duration: 1s;
+              animation-name: animatebottom;
+              animation-duration: 1s
+            }
+            
+            @-webkit-keyframes animatebottom {
+              from { bottom:-100px; opacity:0 } 
+              to { bottom:0px; opacity:1 }
+            }
+            
+            @keyframes animatebottom { 
+              from{ bottom:-100px; opacity:0 } 
+              to{ bottom:0; opacity:1 }
+            }
+            
+            #myDiv {
+              display: none;
+              text-align: center;
+            }
+            </style>
+    <title>Merd|Cert</title>
+  </head>
+  <body class="h-100" onload="myFunction()">
+   <!-- Begin -->
+   <div id="loader"></div>
+
+   <div style="display:none;" id="myDiv" class="animate-bottom">
+       
+        <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 caratop ">
+                      <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                               <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                            </ol>       
+                        <div class="carousel-inner">
+                                <div class="carousel-caption d-sm-block">
+                                    <div class="row">
+                                            <div class="col-sm-6 offset-sm-3 col-xs-12  col-md-4 offset-md-4 formtop">
+                                                  <div class="px-2">
+                                                      <div class="m-auto">
+                                                          <img src="img/merdcertlast.png" class="logo img-fluid"  alt="medcert logo">
+                                                      </div>
+                                                      
+                                                        <form action="post" class="mt-5">
+                                                          <div class="form-group py-3 text-left">
+                                                            <label for="userEmail">Email Address</label>
+                                                            <input type="text" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="yourmail@email.com">
+                                                          </div>
+                                                          <div class="form-group text-left">
+                                                            <label for="userPassword">Password</label>
+                                                            <div class="input-group" id="show_hide_password">
+                                                                <input class="form-control" type="password" id="userPassword">
+                                                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                              </div>
+                                                          </div>
+                                                          <p class="text-left"><a href="">I forgot my password</a> </p>
+                                                          <button class="btn shadow">SIGN IN</button>
+                                                        </form>
+                                                  </div>
+                                                    
+                                                    
+                                                  </div> 
+                                    </div>
+                      
+                                  </div>
+                            
+                          <div class="carousel-item active">
+                            <img class="d-block w-100"  src="img/lasuth.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100"   src="img/lasuth.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100"   src="img/lasuth.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                      </div>
+       
+                    </div>
+                </div>
+            </div>
+   </div>
+    
+
+
+
+<!--  -->
+
+
+<!--  -->
+
+
+
+    <!-- Boostrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $('#v-pills-death a').on('click', function (e) {
+        ('#v-pills-death').toggleClass('show,active');
+})
+    </script>
+   
+          
+<script>
+    new Chart(document.getElementById("myChart"), {
+    type: 'bar',
+    
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      datasets: [
+        {
+          label: "Revenue for this month",
+          backgroundColor: ["#1fb987", "#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#263544","#1fb987","#1fb987","#1fb987","#1fb987"],
+          data: [300000, 500000, 1000000 , 1500000, 2000000, 2500000, 2800000,2200000,1300000,900000,300000,270000]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Month in 2018'
+      }, scales: {
+        yAxes: [{
+					ticks: {
+						beginAtZero:true,
+						userCallback: function(value, index, values) {
+							// Convert the number to a string and splite the string every 3 charaters from the end
+							value = value.toString();
+							value = value.split(/(?=(?:...)*$)/);
+							value = value.join(',');
+							return value;
+						}
+					}
+				}]
+          ,xAxes: [ { gridLines: { display: false } } ], yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: 'Amount(₦)'
+      }
+    }]
+        }
+    }
+});
+    </script>
+    <script>
+        new Chart(document.getElementById("myCharttwo"), {
+        type: 'bar',
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [
+            {
+              label: "Month",
+              backgroundColor: ["#1fb987", "#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#1fb987","#263544","#1fb987","#1fb987","#1fb987","#1fb987"],
+              data: [3000000, 500000, 1000000 , 1500000, 2000000, 2500000, 2800000,2200000,1300000,900000,300000,270000]
+            }
+          ]
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Month in 2018'
+          }
+        }
+    });
+        </script>
+        <script>
+                var myVar;
+                
+                function myFunction() {
+                    myVar = setTimeout(showPage, 3000);
+                }
+                
+                function showPage() {
+                  document.getElementById("loader").style.display = "none";
+                  document.getElementById("myDiv").style.display = "block";
+                }
+                </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Tada!</h2>
+  <p>Some text in my newly loaded page..</p>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html> -->
